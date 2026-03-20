@@ -7,6 +7,13 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: var(--color);
+}
+
+body.dark {
+  --bg: rgb(0, 0, 0);
+  --color: rgb(255, 255, 255);
 }
 body {
   background-color: var(--bg);
@@ -19,7 +26,10 @@ body {
   max-width: 1024px;
   margin: auto;
 }
-.navBar ul {
+.navLists {
+  margin: auto;
+}
+.navBar .navLists ul {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -42,6 +52,56 @@ body {
 .navBtn {
   display: none;
 }
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 80vh;
+  line-height: 1.1;
+
+}
+
+.profileImageContainer {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 15px;
+}
+
+.profileImageContainer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profileContainer h1 {
+  font-size: 46px;
+  font-weight: 400;
+
+}
+.profileContainer h2 {
+  font-size: 74px;
+  font-weight: 600;
+  background: linear-gradient(to right, #5b5bff, #00dbf3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
+}
+.profileContainer p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #756868;
+}
+
+.socialContainer{
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+}
 
 footer {
   background-color: black;
@@ -51,15 +111,24 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  bottom: 0;
   width: 100%;
+}
+footer p {
+  background-color: black;
+  color: white;
 }
 
 /* Tablet */
 @media (min-width: 481px) and (max-width: 767px) {
-  body {
+  /* body {
     background-color: yellow;
+  } */
+
+  .profileContainer h1 {
+    font-size: 26px;
+  }
+  .profileContainer h2 {
+    font-size: 34px;
   }
 }
 
@@ -68,18 +137,32 @@ footer {
   .navBtn {
     display: block;
   }
-  .navBar ul {
+  .navLists {
+    display: none;
+  }
+  .navLists.active {
+    display: block;
+  }
+
+  .navBar .navLists ul {
     display: flex;
     flex-direction: column;
-    background-color: white;
     position: absolute;
     top: 65px;
     right: 5px;
     padding: 15px;
     border: 1px solid black;
+    border-radius: 10px;
   }
   .navBtn,
   .toggleBtn {
     padding-right: 0px;
+  }
+
+  .profileContainer h1 {
+    font-size: 24px;
+  }
+  .profileContainer h2 {
+    font-size: 31px;
   }
 }
