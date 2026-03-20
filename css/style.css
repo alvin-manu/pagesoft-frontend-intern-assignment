@@ -12,6 +12,10 @@
   color: var(--color);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body.dark {
   --bg: rgb(0, 0, 0);
   --color: rgb(255, 255, 255);
@@ -38,6 +42,12 @@ body {
   gap: 15px;
   list-style: none;
   padding: 0px;
+}
+.navLists li a{
+  text-decoration: none;
+}
+.navLists li a:hover{
+  color: #5b5bff;
 }
 .navBtnSection {
   display: flex;
@@ -66,8 +76,8 @@ body {
 }
 
 .profileImageContainer {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   margin-bottom: 15px;
 }
 
@@ -76,6 +86,7 @@ body {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+  transform: scale(1.02);
 }
 
 .profileContainer h1 {
@@ -235,9 +246,6 @@ footer p {
 
 /* Tablet */
 @media (min-width: 481px) and (max-width: 987px) {
-  /* body {
-    background-color: yellow;
-  } */
 
   .profileContainer h1 {
     font-size: 26px;
@@ -252,6 +260,9 @@ footer p {
 
 .projectCard{
   padding: 12px;
+}
+.todoSection{
+margin: 0px 10px;
 }
 }
 
@@ -296,6 +307,10 @@ footer p {
 
 .projectCard{
   padding: 12px;
+}
+
+.todoSection{
+margin: 0px 10px;
 }
   
 }

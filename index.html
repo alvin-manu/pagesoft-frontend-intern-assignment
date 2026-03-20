@@ -20,9 +20,9 @@
             <h1>Portfolio</h1>
             <div class="navLists" id="navLists">
                 <ul>
-                    <li>Home</li>
-                    <li>To-Do List</li>
-                    <li>Projects</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#todo">To-Do List</a></li>
+                    <li><a href="#projects">Projects</a></li>
                 </ul>
             </div>
             <div class="container navBtnSection">
@@ -36,7 +36,7 @@
         <!-- Profile Section -->
         <section class="profileContainer">
             <div class="profileImageContainer">
-                <img src="assets/images/profile-image.jpg" alt="Alvin manu Wilson profile image">
+                <img src="assets/images/profile-image.webp" alt="Alvin manu Wilson profile image">
             </div>
             <p>Hi, I'm</p>
             <h1>Alvin Manu Wilson</h1>
@@ -61,52 +61,68 @@
 
         <!-- Project Section -->
 
-        <section class="project">
+        <section class="project" id="projects">
             <h2>My Projects</h2>
             <div class="projectContainer">
                 <article class="projectCard">
                     <img src="assets/images/project1.png" alt="Blog App Screenshot" width="100%">
-                    <h2>Blog Application</h2>
-                    <p>A full-featured blog application that allows users to create, edit, and delete blog posts with a clean and intuitive UI. Users can browse posts by category, view detailed content, and interact through comments or likes. Built with a focus on user experience, content management, and responsive design.</p>
-                    <a href="https://github.com/alvin-manu/mern_blog_app" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
+                    <h3>Blog Application</h3>
+                    <p>A full-featured blog application that allows users to create, edit, and delete blog posts with a
+                        clean and intuitive UI. Users can browse posts by category, view detailed content, and interact
+                        through comments or likes. Built with a focus on user experience, content management, and
+                        responsive design.</p>
+                    <a href="https://github.com/alvin-manu/mern_blog_app" target="_blank"><i
+                            class="fa-brands fa-github"></i>Github</a>
                 </article>
                 <article class="projectCard">
                     <img src="assets/images/project2.png" alt="Portfolio Showcase App Screenshot" width="100%">
-                    <h2>Portfolio Showcase App</h2>
-                    <p>A MERN-based project showcase app that lets users upload and display their projects with image previews and external links. Includes a home dashboard for managing entries and an explore section to browse others' work.</p>
-                    <a href="https://github.com/alvin-manu/Project-hive" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
+                    <h3>Portfolio Showcase App</h3>
+                    <p>A MERN-based project showcase app that lets users upload and display their projects with image
+                        previews and external links. Includes a home dashboard for managing entries and an explore
+                        section to browse others' work.</p>
+                    <a href="https://github.com/alvin-manu/Project-hive" target="_blank"><i
+                            class="fa-brands fa-github"></i>Github</a>
                 </article>
                 <article class="projectCard">
                     <img src="assets/images/project3.png" alt="Media Player App Screenshot" width="100%">
-                    <h2>Media Player</h2>
-                    <p>A media player that allows users to easily add their media collections (films, songs, etc.) and organize them into categories. You can also add image and video links, view them, and track your watch history.</p>
-                    <a href="https://github.com/alvin-manu/mediaPlayerFE" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
+                    <h3>Media Player</h3>
+                    <p>A media player that allows users to easily add their media collections (films, songs, etc.) and
+                        organize them into categories. You can also add image and video links, view them, and track your
+                        watch history.</p>
+                    <a href="https://github.com/alvin-manu/mediaPlayerFE" target="_blank"><i
+                            class="fa-brands fa-github"></i>Github</a>
                 </article>
                 <article class="projectCard">
                     <img src="assets/images/project4.png" alt="Movie Website Screenshot" width="100%">
-                    <h2>Movie Website</h2>
-                    <p>A movie website where users can browse a wide selection of films and TV shows. The homepage features a large banner for Netflix Originals and sections like Trending, Top Rated, Action, Comedy, and more.</p>
-                    <a href="https://github.com/alvin-manu/movie_website" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
+                    <h3>Movie Website</h3>
+                    <p>A movie website where users can browse a wide selection of films and TV shows. The homepage
+                        features a large banner for Netflix Originals and sections like Trending, Top Rated, Action,
+                        Comedy, and more.</p>
+                    <a href="https://github.com/alvin-manu/movie_website" target="_blank"><i
+                            class="fa-brands fa-github"></i>Github</a>
                 </article>
                 <article class="projectCard">
                     <img src="assets/images/project5.png" alt="Restaurant Website Screenshot" width="100%">
-                    <h2>Restaurant Website</h2>
-                    <p>A restaurant website built using React and Vite. It features a clean, responsive layout with modular components to showcase a restaurant’s brand, menu, and offerings. Includes ESLint for code quality.</p>
-                    <a href="https://github.com/alvin-manu/restaurant_website" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
+                    <h3>Restaurant Website</h3>
+                    <p>A restaurant website built using React and Vite. It features a clean, responsive layout with
+                        modular components to showcase a restaurant’s brand, menu, and offerings. Includes ESLint for
+                        code quality.</p>
+                    <a href="https://github.com/alvin-manu/restaurant_website" target="_blank"><i
+                            class="fa-brands fa-github"></i>Github</a>
                 </article>
             </div>
         </section>
         <!-- To do List -->
-         <section class="todoSection">
+        <section class="todoSection" id="todo">
             <h2>To Do List</h2>
             <label for="todoInput">Add Todo</label><br>
             <input type="text" id="todoInput" placeholder="Enter a Todo">
             <button id="todoBtn">Submit</button>
             <ul id="todoList">
-                
+
             </ul>
 
-         </section>
+        </section>
 
     </main>
 
