@@ -1,6 +1,7 @@
 :root {
   --bg: white;
   --color: black;
+  --bg-card:#f2f4f6;
 }
 
 * {
@@ -14,6 +15,8 @@
 body.dark {
   --bg: rgb(0, 0, 0);
   --color: rgb(255, 255, 255);
+  --bg-card:#101828;
+
 }
 body {
   background-color: var(--bg);
@@ -23,7 +26,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  max-width: 1024px;
+  max-width: 1400px;
   margin: auto;
 }
 .navLists {
@@ -60,7 +63,6 @@ body {
   text-align: center;
   min-height: 80vh;
   line-height: 1.1;
-
 }
 
 .profileImageContainer {
@@ -79,7 +81,6 @@ body {
 .profileContainer h1 {
   font-size: 46px;
   font-weight: 400;
-
 }
 .profileContainer h2 {
   font-size: 74px;
@@ -96,16 +97,58 @@ body {
   color: #756868;
 }
 
-.socialContainer{
+.socialContainer {
   margin-top: 10px;
   display: flex;
   gap: 10px;
   font-size: 20px;
 }
 
-.digitalClock{
+.digitalClock {
   text-align: center;
   font-size: larger;
+}
+.project{
+  margin: auto;
+  margin-top: 30px;
+  max-width: 1400px;
+}
+.project h2{
+  text-align: center;
+}
+
+.projectContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.projectCard{
+  background-color: var(--bg-card);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.projectCard img{
+  border-radius: 10px;
+}
+
+.projectCard h2, .projectCard p, .projectCard a , .projectCard i{
+  background-color: var(--bg-card);
+  margin: 10px 0px;
+}
+.projectCard h2{
+  text-align: left;
+}
+
+.projectCard a{
+  text-decoration: none;
+  color: #5b5bff;
+}
+
+.projectCard a i{
+  margin-right: 10px;
 }
 
 footer {
@@ -124,7 +167,7 @@ footer p {
 }
 
 /* Tablet */
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 987px) {
   /* body {
     background-color: yellow;
   } */
@@ -135,6 +178,14 @@ footer p {
   .profileContainer h2 {
     font-size: 34px;
   }
+  .projectContainer {
+  grid-template-columns: repeat(2, 1fr);
+  padding: 12px;
+}
+
+.projectCard{
+  padding: 12px;
+}
 }
 
 /* Mobile */
@@ -170,4 +221,14 @@ footer p {
   .profileContainer h2 {
     font-size: 31px;
   }
+
+  .projectContainer {
+  grid-template-columns: 1fr;
+  padding: 12px;
+}
+
+.projectCard{
+  padding: 12px;
+}
+  
 }
