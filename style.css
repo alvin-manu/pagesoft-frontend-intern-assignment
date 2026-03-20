@@ -103,6 +103,11 @@ body {
   font-size: 20px;
 }
 
+.digitalClock{
+  text-align: center;
+  font-size: larger;
+}
+
 footer {
   background-color: black;
   color: white;
