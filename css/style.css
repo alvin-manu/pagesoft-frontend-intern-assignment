@@ -145,7 +145,7 @@ body {
   border-radius: 10px;
 }
 
-.projectCard h2, .projectCard p, .projectCard a , .projectCard i{
+.projectCard h3, .projectCard p, .projectCard a , .projectCard i{
   background-color: var(--bg-card);
   margin: 10px 0px;
 }
