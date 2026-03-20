@@ -151,6 +151,73 @@ body {
   margin-right: 10px;
 }
 
+.todoSection {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid white;
+}
+
+.todoSection h2 {
+  margin-bottom: 15px;
+}
+
+.todoSection input {
+  width: 65%;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 6px;
+  outline: none;
+  margin-right: 8px;
+  margin-top: 10px;
+}
+
+
+.todoSection button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #5b5bff;
+  color: white;
+}
+
+#todoList {
+  margin-top: 20px;
+  padding: 0;
+}
+
+#todoList li {
+  list-style: none;
+  background: var(--bg);
+  margin: 10px 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+#todoList button {
+  margin-left: 5px;
+  padding: 5px 8px;
+  font-size: 12px;
+  border-radius: 5px;
+  background: #ff4d4d;
+}
+
+#todoList .fa-check{
+  color: green;
+}
+
+#todoList .fa-circle{
+  color: red;
+}
+
 footer {
   background-color: black;
   color: white;

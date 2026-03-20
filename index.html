@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -65,38 +65,48 @@
             <h2>My Projects</h2>
             <div class="projectContainer">
                 <article class="projectCard">
-                    <img src="assets/images/project1.png" alt="" width="100%">
+                    <img src="assets/images/project1.png" alt="Blog App Screenshot" width="100%">
                     <h2>Blog Application</h2>
                     <p>A full-featured blog application that allows users to create, edit, and delete blog posts with a clean and intuitive UI. Users can browse posts by category, view detailed content, and interact through comments or likes. Built with a focus on user experience, content management, and responsive design.</p>
                     <a href="https://github.com/alvin-manu/mern_blog_app" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
                 </article>
                 <article class="projectCard">
-                    <img src="assets/images/project2.png" alt="" width="100%">
+                    <img src="assets/images/project2.png" alt="Portfolio Showcase App Screenshot" width="100%">
                     <h2>Portfolio Showcase App</h2>
                     <p>A MERN-based project showcase app that lets users upload and display their projects with image previews and external links. Includes a home dashboard for managing entries and an explore section to browse others' work.</p>
                     <a href="https://github.com/alvin-manu/Project-hive" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
                 </article>
                 <article class="projectCard">
-                    <img src="assets/images/project3.png" alt="" width="100%">
+                    <img src="assets/images/project3.png" alt="Media Player App Screenshot" width="100%">
                     <h2>Media Player</h2>
                     <p>A media player that allows users to easily add their media collections (films, songs, etc.) and organize them into categories. You can also add image and video links, view them, and track your watch history.</p>
                     <a href="https://github.com/alvin-manu/mediaPlayerFE" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
                 </article>
                 <article class="projectCard">
-                    <img src="assets/images/project4.png" alt="" width="100%">
+                    <img src="assets/images/project4.png" alt="Movie Website Screenshot" width="100%">
                     <h2>Movie Website</h2>
                     <p>A movie website where users can browse a wide selection of films and TV shows. The homepage features a large banner for Netflix Originals and sections like Trending, Top Rated, Action, Comedy, and more.</p>
                     <a href="https://github.com/alvin-manu/movie_website" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
                 </article>
                 <article class="projectCard">
-                    <img src="assets/images/project5.png" alt="" width="100%">
+                    <img src="assets/images/project5.png" alt="Restaurant Website Screenshot" width="100%">
                     <h2>Restaurant Website</h2>
                     <p>A restaurant website built using React and Vite. It features a clean, responsive layout with modular components to showcase a restaurant’s brand, menu, and offerings. Includes ESLint for code quality.</p>
                     <a href="https://github.com/alvin-manu/restaurant_website" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
                 </article>
             </div>
-
         </section>
+        <!-- To do List -->
+         <section class="todoSection">
+            <h2>To Do List</h2>
+            <label for="todoInput">Add Todo</label><br>
+            <input type="text" id="todoInput" placeholder="Enter a Todo">
+            <button id="todoBtn">Submit</button>
+            <ul id="todoList">
+                
+            </ul>
+
+         </section>
 
     </main>
 
@@ -106,6 +116,6 @@
 
 </body>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 
 </html>
